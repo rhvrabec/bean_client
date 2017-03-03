@@ -8,7 +8,7 @@ import About from './pages/about';
 
 export default (
     <Router history={browserHistory}>
-        <Route path='/' component={App}>
+        <Route path='/' component={Container}>
   		    <IndexRoute component={Main}></IndexRoute>
             <Route path='about' component={About}></Route>
         </Route>

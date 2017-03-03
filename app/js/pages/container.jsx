@@ -2,7 +2,7 @@ import React from 'react';
 
 //Components
 
-export default class Main extends React.Component {
+export default class Container extends React.Component {
     constructor() {
         super();
     }
@@ -10,7 +10,7 @@ export default class Main extends React.Component {
     render() {
         return (
             <div>
-
+            	{this.props.children}
             </div>
         );
     }

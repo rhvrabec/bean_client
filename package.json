@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js --ignore app",
-    "build-scss": "node-sass --output-style compressed -o app app/scss",
+    "server": "nodemon server.js --ignore app/js/",
+    "build-scss": "node-sass --output-style compressed -o web app/scss",
     "watch-scss": "nodemon -e scss -x \"npm run build-scss\"",
     "build-js": "webpack -p",
     "watch-js": "webpack -d --watch",
