@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js --ignore app/js/",
+    "start": "nodemon server.js --ignore app/js/",
     "build-scss": "node-sass --output-style compressed -o web app/scss",
     "watch-scss": "nodemon -e scss -x \"npm run build-scss\"",
     "build-js": "webpack -p",
@@ -15,6 +15,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "axios": "^0.16.2",
+    "ble-bean": "^2.1.1",
+    "ble-bean-stream": "^0.1.0",
     "express": "^4.14.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
