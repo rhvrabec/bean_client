@@ -1,0 +1,7 @@
+To Start:
+1. in one window, run npm run start 
+2. in one window, run npm run listen
+  - this may log a ws or fs error
+
+Within app > js > pages, react builds out the web app UI
+
