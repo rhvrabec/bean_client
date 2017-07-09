@@ -13,6 +13,8 @@ export default class Main extends React.Component {
     }
 
     onclick_dicoverBean() {
+        onclick_testServer();
+
         let intervalId;
 
         Bean.discover((bean) => {
@@ -45,7 +47,7 @@ export default class Main extends React.Component {
             headers: {'Content-Type': 'application/json'}
         }
 
-        axios.post('http://192.168.1.20:3000/collect_data', {
+        axios.post('http://localhost:3000/collect_data', {
             'uuid': uuid,
             'timeStamp': currentDate,
             'temp': temp,
